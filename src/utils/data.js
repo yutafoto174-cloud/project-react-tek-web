@@ -8,8 +8,8 @@ const RULES = [
 ];
 const mk = (id, name, price, area, type, rating, available, facilities) => ({
   id, name, slug: name.toLowerCase().replace(/\s+/g, "-"), price, area, type, rating, available,
-  facilities, img: `https://picsum.photos/seed/kos${id}/400/250`,
-  owner: OWNERS[id - 1], wa: "6281234567890", deposit: price,
+  facilities, img: `${import.meta.env.BASE_URL}images/kos${id}.jpg`,
+  owner: OWNERS[id - 1], wa: "6281352374349", deposit: price,
   rules: RULES[id % 3],
 });
 export const kosList = [
